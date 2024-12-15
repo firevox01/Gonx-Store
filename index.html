@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gonx</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('https://i.postimg.cc/sDhgps96/bloody-handprint-background-23-2150740514.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            text-align: center;
+            font-family: 'Lobster', cursive;
+            text-shadow: 0 0 10px #f43f3f, 0 0 20px #f43f3f, 0 0 30px #d41717;
+            animation: glow 2s infinite alternate;
+        }
+        
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #f43f3f, 0 0 20px #f43f3f, 0 0 30px #d41717;
+            }
+            to {
+                text-shadow: 0 0 20px #f43f3f, 0 0 30px #f43f3f, 0 0 40px #d41717;
+            }
+        }
+        
+        .container-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 1200px;
+        }
+        
+        .button-container {
+            margin: 40px 0;
+        }
+        
+        .big-button {
+            background-color: #f43f3f;
+            color: #000;
+            padding: 15px 30px;
+            font-size: 1.5em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .big-button:hover {
+            background-color: #d41818;
+            transform: scale(1.1);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
+        }
+        
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            width: 200px;
+            text-align: center;
+            padding: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .container:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
+        }
+        
+        .container img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        
+        .text {
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+        
+        .price {
+            color: #ffffff;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Gonx Store</h1>
+
+    <div class="container-wrapper">
+        <!-- Container 1 -->
+        <div class="container">
+            <img src="https://i.postimg.cc/QtycKf82/channels4-profile.jpg" alt="Product 1">
+            <div class="text">Netflix 1 month</div>
+            <div class="price">10 DT/2.99$</div>
+        </div>
+
+        <!-- Repeat containers with different content -->
+        <div class="container">
+            <img src="https://i.postimg.cc/QtycKf82/channels4-profile.jpg" alt="Product 2">
+            <div class="text">Netflix 1 Year</div>
+            <div class="price">80 DT/26.99$</div>
+        </div>
+
+        <div class="container">
+            <img src="https://i.postimg.cc/15twrhnL/images.png" alt="Product 3">
+            <div class="text">Acc Gta V</div>
+            <div class="price">20 DT/6.99$</div>
+        </div>
+
+        <div class="container">
+            <img src="https://i.postimg.cc/9fTnXqct/uj-VMOiyqr9l-ZU5g6qeg-Bz-LP5e-Yxlgn-YGPJBu-Xgnt.png" alt="Product 4">
+            <div class="text">Nitro Gift</div>
+            <div class="price">20 DT/6.99$</div>
+        </div>
+
+        <div class="container">
+            <img src="https://i.postimg.cc/9fTnXqct/uj-VMOiyqr9l-ZU5g6qeg-Bz-LP5e-Yxlgn-YGPJBu-Xgnt.png" alt="Product 5">
+            <div class="text">Nitro 3 Month</div>
+            <div class="price">10 DT/3.99$</div>
+        </div>
+
+        <div class="container">
+            <img src="https://i.postimg.cc/4NcGHn4y/Reddeadcover.png" alt="Product 6">
+            <div class="text">Acc Rdr2</div>
+            <div class="price">15 DT/4.99$</div>
+        </div>
+
+        <div class="container">
+            <img src="https://i.postimg.cc/JhSc011N/2024-spotify-brand-assets-media-kit.jpg" alt="Product 7">
+            <div class="text">Spotify 1 month</div>
+            <div class="price">10 DT/2.99$</div>
+        </div>
+
+        <div class="container">
+            <img src="https://i.postimg.cc/JhSc011N/2024-spotify-brand-assets-media-kit.jpg" alt="Product 8">
+            <div class="text">Spotify 3 Month </div>
+            <div class="price">29 DT/6.99$</div>
+        </div>
+
+        <div class="container">
+            <img src="https://i.postimg.cc/JhSc011N/2024-spotify-brand-assets-media-kit.jpg" alt="Product 9">
+            <div class="text">Spotify 1 Year</div>
+            <div class="price">82 DT/27.99$</div>
+        </div>
+
+        <div class="container">
+            <img src="https://i.postimg.cc/Gt66L049/valo-points.jpg" alt="Product 10">
+            <div class="text">Valorant Points EU</div>
+            <div class="price">50DT-15$/200Dt-62$</div>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <a href="https://discord.gg/zbF9sm5R" class="big-button">Buy A Product</a>
+    </div>
+</body>
+
+</html>
